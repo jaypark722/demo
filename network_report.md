@@ -1,5 +1,5 @@
 # 🛡 Network Monitoring Report
-_Generated on: Thu Jun 19 07:32:35 AM EDT 2025_
+_Generated on: Thu Jun 19 07:54:14 AM EDT 2025_
 
 ---
 
@@ -7,24 +7,20 @@ _Generated on: Thu Jun 19 07:32:35 AM EDT 2025_
 ```bash
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      22562/python3       
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      686/sshd: /usr/sbin 
 tcp6       0      0 :::22                   :::*                    LISTEN      686/sshd: /usr/sbin 
 ```
 
 ## 🔗 Active Network Connections
 ```bash
-Netid State  Recv-Q Send-Q       Local Address:Port   Peer Address:Port Process                                                                 
-udp   ESTAB  0      0      192.168.56.103%eth0:68   192.168.56.100:67    users:(("NetworkManager",pid=578,fd=26))                               
-tcp   LISTEN 0      5                  0.0.0.0:8080        0.0.0.0:*     users:(("python3",pid=22562,fd=3))                                     
-tcp   LISTEN 0      128                0.0.0.0:22          0.0.0.0:*     users:(("sshd",pid=686,fd=7))                                          
-tcp   ESTAB  0      0           192.168.56.103:22   192.168.56.102:58528 users:(("sshd-session",pid=16872,fd=4),("sshd-session",pid=16848,fd=4))
-tcp   LISTEN 0      128                   [::]:22             [::]:*     users:(("sshd",pid=686,fd=8))                                          
+Netid State  Recv-Q Send-Q       Local Address:Port   Peer Address:PortProcess                                  
+udp   ESTAB  0      0      192.168.56.103%eth0:68   192.168.56.100:67   users:(("NetworkManager",pid=578,fd=26))
+tcp   LISTEN 0      128                0.0.0.0:22          0.0.0.0:*    users:(("sshd",pid=686,fd=7))           
+tcp   LISTEN 0      128                   [::]:22             [::]:*    users:(("sshd",pid=686,fd=8))           
 ```
 
 ## 🚩 Suspicious Open Ports (>1024)
 ```bash
-tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      22562/python3       
 ```
 
 ## ⚠ Quick SYN Packet Check (tcpdump)
