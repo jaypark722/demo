@@ -1,5 +1,5 @@
 # 🛡 Network Monitoring Report
-_Generated on: Thu Jun 19 07:54:14 AM EDT 2025_
+_Generated on: Thu Jun 19 07:57:54 AM EDT 2025_
 
 ---
 
@@ -26,6 +26,7 @@ tcp   LISTEN 0      128                   [::]:22             [::]:*    users:((
 ## ⚠ Quick SYN Packet Check (tcpdump)
 _Capturing max 20 SYN packets or max 10 seconds...
 ```bash
+     20 192.168.56.102
 ```
 
 ## ✅ Summary and Recommendations
@@ -35,3 +36,4 @@ _Capturing max 20 SYN packets or max 10 seconds...
 - Keep tcpdump and packet capturing commands optional due to permissions and runtime.
 
 Report generated. Review and investigate as needed.
+
